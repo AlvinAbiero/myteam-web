@@ -23,3 +23,15 @@ body {
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.primary__heading {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 10rem;
+}
+
+.secondary__heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+}

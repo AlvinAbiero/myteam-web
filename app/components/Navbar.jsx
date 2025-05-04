@@ -17,7 +17,7 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="w-full z-50 ">
       <div className="max-w-7xl mx-auto w-full space-x-6 px-6 py-8 flex items-center justify-between">
         <Link href="/">
           <Image
