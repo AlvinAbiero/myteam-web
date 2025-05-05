@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-6 w-full items-center">
             {/* logo */}
             <Link href="/">
-              <Image src={logo} className="cursor-pointer" />
+              <Image src={logo} alt="myteam-logo" className="cursor-pointer" />
             </Link>
             <div className="flex items-center space-x-8 text-2xl">
               {navLinks.map((link) => (
