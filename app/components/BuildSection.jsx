@@ -26,8 +26,8 @@ const BuildSection = () => {
       ref={ref}
       className="bg-[#012f34] relative"
       variants={variants}
-      initial="hiddenLeft"
-      animate={inView ? "visible" : "hiddenLeft"}
+      initial="hiddenBottom"
+      animate={inView ? "visible" : "hiddenBottom"}
       transition={{ duration: 0.8 }}
     >
       <div className="min-[1033px]:grid min-[1033px]:grid-cols-2 flex flex-col space-y-12 justify-center lg:gap-4 w-full max-w-[120rem] min-h-screen lg:text-left text-center md:p-12 flex-wrap lg:px-[8rem] md:px-[6rem] px-[4rem] lg:py-[14rem] md:py-[10rem] py-[8rem]">
