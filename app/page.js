@@ -1,4 +1,5 @@
 import BuildSection from "./components/BuildSection";
+import Cta from "./components/Cta";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <BuildSection />
       <Testimonials />
+      <Cta />
     </main>
   );
 }
