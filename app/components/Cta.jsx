@@ -22,7 +22,7 @@ const Cta = () => {
       ref={ref}
       variants={variants}
       initial="hiddenBottom"
-      animate={inView ? "hidden" : "hiddenBottom"}
+      animate={inView ? "visible" : "hiddenBottom"}
       transition={{ duration: 0.8, delay: 0.4 }}
       className="bg-[#f67e7e] flex items-center flex-col lg:flex-row justify-around  p-[8rem] relative w-full gap-12"
     >
