@@ -27,6 +27,9 @@ export const metadata = {
   },
   description:
     "This is a landing page for a fictional company called MyTeam. It is built with Next.js",
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({ children }) {
