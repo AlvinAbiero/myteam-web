@@ -2,11 +2,11 @@
 
 const ContactHero = () => {
   return (
-    <div className="flex flex-col gap-[1.6rem] md:items-center lg:items-start">
-      <h1 className="text-[6.4rem] leading-[10rem] font-bold md:text-left text-center">
+    <div className="flex flex-col gap-[1.6rem] items-center md:items-start">
+      <h1 className="text-[6.4rem] leading-[10rem] font-bold lg:text-left text-center">
         Contact
       </h1>
-      <h2 className="text-[3.2rem] leading-[4.8rem] font-bold text-[#f67e7e] md:text-left text-center">
+      <h2 className="text-[3.2rem] leading-[4.8rem] font-bold text-[#f67e7e] lg:text-left text-center">
         Ask us about
       </h2>
       <div className="flex flex-col gap-[0.8rem] mt-[1.6rem]">

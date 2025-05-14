@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="w-full z-50 ">
-      <div className="max-w-[120rem] mx-auto w-full space-x-6 p-8 flex items-center justify-between">
+      <div className="max-w-[120rem] mx-auto w-full space-x-24 md:p-16 p-12 flex items-center justify-between">
         <Link href="/">
           <Image
             src={logo}
@@ -29,13 +29,13 @@ const Navbar = () => {
           />
         </Link>
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center justify-between w-full lg:text-2xl text-xl font-semibold">
-          <div className="flex space-x-4">
+        <div className="hidden md:flex items-center justify-between w-full lg:text-3xl md:text-2xl text-xl font-semibold">
+          <div className="flex space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-[var(--text)] hover:text-primary transition"
+                className="text-[var(--text)] hover:text-[var(--footer-text)] transition"
               >
                 {link.name}
               </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <div>
             <Link
               href="/contact"
-              className="bg-[var(--hero-bg)] hover:bg-[var(--text)] text-[var(--text)] hover:text-[var(--hero-bg)] px-6 py-4 border-white border-4
+              className="bg-[var(--hero-bg)] hover:bg-[var(--text)] text-[var(--text)] hover:text-[var(--hero-bg)] px-6 py-4 border-white border-3
                rounded-full  transition"
             >
               contact us
@@ -81,7 +81,7 @@ const Navbar = () => {
             />
           </button>
         </div>
-        <div className="flex flex-col space-y-8 text-2xl px-8 py-8">
+        <div className="flex flex-col space-y-8 md:text-3xl text-2xl px-16 md:px-24 py-12">
           {[...navLinks, { name: "contact us", href: "/contact" }].map(
             (link) => (
               <Link
@@ -89,8 +89,8 @@ const Navbar = () => {
                 href={link.href}
                 className={`${
                   link.name === "contact us"
-                    ? "bg-transparent hover:bg-[var(--text)] text-[var(--text)] hover:text-[var(--hero-bg)] px-4 py-2 border-white border-4 rounded-4xl text-center w-2/3"
-                    : "text-[var(--text)] hover:text-primary"
+                    ? "bg-transparent hover:bg-[var(--text)] text-[var(--text)] hover:text-[var(--hero-bg)] px-4 py-3.5 border-white border-2 rounded-4xl text-center w-5/8"
+                    : "text-[var(--text)] hover:text-[var(--footer-text)]"
                 } transition cursor-pointer`}
                 onClick={() => setIsOpen(false)}
               >

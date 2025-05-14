@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="relative">
       <motion.div
-        className="min-[1033px]:grid min-[1033px]:grid-cols-2 flex flex-col space-y-12 justify-center lg:gap-4 w-full max-w-[120rem] md:min-h-screen lg:text-left text-center  flex-wrap lg:p-16 md:p-12 px-12 py-24"
+        className="min-[1033px]:grid min-[1033px]:grid-cols-2 flex flex-col space-y-12 md:justify-center lg:gap-12 w-full max-w-[120rem] md:min-h-screen lg:text-left text-center flex-wrap lg:px-24 md:px-16 md:py-12 px-12 py-24 min-h-[75vh]"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
